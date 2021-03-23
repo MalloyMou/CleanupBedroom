@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="gr" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>My Routine</title>
+  </head>
+ 
+ <script>
+function checkForm(form)
+  {
+    if((form.cb1.checked)&&(form.cb2.checked)&&(form.cb3.checked)){
+      //alert("BRAVO");
+	  var x = document.getElementById("myDIV");
+	  x.style.display = "block"
+
+    }
+  }
+</script> 
+ 
+ 
+  <body>
+   
+	  <div>
+<h1 style="text-align: center;"><strong><font size="10">Δουλειές στο δωμάτιό μου</font></strong></h1>
+
+<style>
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:60px;
+    height:60px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #4CAF50;
+	
+}
+input[type='submit'] {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  
+}
+</style>
+
+<div>
+<form action="javascript:void(0);" onsubmit="return checkForm(this);">
+<div class="checkbox-wrapper">
+<input type="checkbox" name="cb1"/>
+<img src="C:\Users\kater\Desktop\strono.png"/>
+	<label for="strono"><font size="6">Στρώνω το κρεβάτι μου	</font></label>
+</div>
+<br>
+<div class="checkbox-wrapper">
+<input type="checkbox" name="cb2"/>
+<img src="C:\Users\kater\Desktop\diplono.png"/>
+	<label for="strono"><font size="6">Διπλώνω τα ρούχα μου</font></label>
+</div>
+<br>
+<div class="checkbox-wrapper">
+<input type="checkbox" name="cb3"/>
+<img src="C:\Users\kater\Desktop\taktopoio.png"/>
+	<label for="strono"><font size="6">Τακτοποιώ το γραφείο μου</font></label>
+</div>
+<br>
+<br>
+<br>
+<br>
+<table>
+<tr>
+<td><input type="submit" value="ΤΕΛΕΙΩΣΑ"></td> 
+<td>&nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td style="text align: center"><div style="display: none; color: green;" id="myDIV"><strong><font size="10">ΜΠΡΑΒΟ!!!</strong></font></div></td>
+</tr>
+</table>
+
+</form>
+
+</body> 
